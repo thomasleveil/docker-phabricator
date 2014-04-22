@@ -1,7 +1,7 @@
 FROM dockerfiles/centos-lamp
 MAINTAINER Frédéric Langlade-Bellone <fred@parapluie.org>
 
-RUN yum -y install git php-cli php-mysql php-process php-devel php-gd php-pecl-apc php-pecl-json php-mbstring
+RUN yum -y install git php-cli php-mysql php-process php-devel php-gd php-pecl-apc php-pecl-json php-mbstring subversion
 
 RUN rm /etc/httpd/conf.d/welcome.conf
 RUN mkdir /var/repo
